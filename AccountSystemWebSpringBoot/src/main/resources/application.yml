@@ -1,0 +1,3 @@
+spring.application.name=AccountSystem
+server.servlet.context-path=/account-system
+spring.mvc.servlet.path=/mvc
