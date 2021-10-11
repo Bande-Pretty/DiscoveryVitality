@@ -3,13 +3,6 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
-    <groupId>org.example</groupId>
-    <artifactId>DiscoveryVitality</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <packaging>pom</packaging>
-    <description>This is the Account system</description>
-
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -17,12 +10,26 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
+
+
+    <groupId>za.ac.nwu.ac</groupId>
+    <artifactId>DiscoveryVitality</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <description>This is the Account system</description>
+
+
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
+        
         <springfox-swagger.verion>2.9.2</springfox-swagger.verion>
         <swagger.version>1.5.20</swagger.version>
     </properties>
+
+
+
+
 
 
     <modules>
@@ -33,6 +40,7 @@
         <module>AccountSystemWeb</module>
         <module>AccountSystemWebSpringBoot</module>
     </modules>
+
 
     <dependencyManagement>
         <dependencies>
@@ -74,13 +82,220 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-spi</artifactId>
+            <version>3.0.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-core</artifactId>
+            <version>3.0.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-schema</artifactId>
+            <version>3.0.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-staticdocs</artifactId>
+            <version>2.6.1</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-oas</artifactId>
+            <version>3.0.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-petstore</artifactId>
+            <version>2.10.5</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger1</artifactId>
+            <version>3.0.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-spring-webmvc</artifactId>
+            <version>3.0.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-javadoc</artifactId>
+            <version>0.9.4</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-spring-web</artifactId>
+            <version>3.0.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-boot-starter</artifactId>
+            <version>3.0.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-common</artifactId>
+            <version>3.0.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-spring-webflux</artifactId>
+            <version>3.0.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-petstore-webflux</artifactId>
+            <version>2.10.5</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-data-rest</artifactId>
+            <version>3.0.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-spring-integration</artifactId>
+            <version>3.0.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.heartpattern.springfox</groupId>
+            <artifactId>springfox-core</artifactId>
+            <version>0.1.7</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.heartpattern.springfox</groupId>
+            <artifactId>springfox-starter</artifactId>
+            <version>0.1.7</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.heartpattern.springfox</groupId>
+            <artifactId>springfox-brigadier</artifactId>
+            <version>0.1.7</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.heartpattern.springfox</groupId>
+            <artifactId>springfox-common</artifactId>
+            <version>0.1.7</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox.grails</groupId>
+            <artifactId>springfox-grails</artifactId>
+            <version>1.0.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-spring-integration-webmvc</artifactId>
+            <version>3.0.0</version>
+            <scope>compile</scope>
+        </dependency>
 
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-inline</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-junit-jupiter</artifactId>
+            <scope>test</scope>
+        </dependency>
 
-
-
-
-
-
+    </dependencies>
+   <build>
+       <pluginManagement>
+           <plugins>
+               <plugin>
+                   <groupId>org.jacoco</groupId>
+                   <artifactId>jacoco-maven-plugin</artifactId>
+                   <version>0.8.3</version>
+                   <configuration>
+                       <haltOnFailure>${haltOnFailure}</haltOnFailure>
+                       <rules>
+                           <element>CLASS</element>
+                           <excludes>za.ac.nuw.ac.domain.persistence</excludes>
+                           <excludes>za.ac.nuw.ac.logic.flow</excludes>
+                               <limits>
+                                   <limit>
+                                       <counter>INSTRUCTION</counter>
+                                       <value>COVEREDRATIO</value>
+                                       <minumum>0.8</minumum>
+                                   </limit>
+                                   <limit>
+                                       <counter>LINE</counter>
+                                       <value>COVEREDRATIO</value>
+                                       <minumum>0.8</minumum>
+                                   </limit>
+                                   <limit>
+                                       <counter>BRANHC</counter>
+                                       <value>COVEREDRATIO</value>
+                                       <minumum>0.8</minumum>
+                                   </limit>
+                               </limits>
+                       </rules>
+                   </configuration>
+                   <executions>
+                       <execution>
+                           <id>jacoco-check</id>
+                           <phase>test</phase>
+                           <goals>
+                               <goal>check</goal>
+                           </goals>
+                       </execution>
+                       <execution>
+                           <id>default-prepare-agent</id>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                       </execution>
+                       <execution>
+                           <id>default-report</id>
+                           <phase>prepare-package</phase>
+                           <goals>
+                               <goal>report</goal>
+                           </goals>
+                       </execution>
+                   </executions>
+               </plugin>
+           </plugins>
+       </pluginManagement>
+   </build>
 
 
 </project>
